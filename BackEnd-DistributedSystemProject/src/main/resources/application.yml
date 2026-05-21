@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: BackEndSistemiDistribuitiProgetto
+  security:
+    oauth2:
+      client:
+        registration:
+          cognito:
+            client-id: 64hvqo93b8vjpvaggtg1cal4me
+            scope: openid
+        provider:
+          cognito:
+            issuer-uri: https://cognito-idp.eu-north-1.amazonaws.com/eu-north-1_Xb7fdfkd4
+
+server:
+  port: 5000
+  servlet:
+    context-path: /
+
+amazon:
+  dynamodb:
+    endpoint: dynamodb.eu-north-1.amazonaws.com
+  aws:
+    accesskey: INSERISCI_CHIAVE_QUI
+    secretkey: INSERISCI_CHIAVE_QUI
+    region: eu-north-1
+
+application:
+  bucket:
+    name: immaginiquestionario
